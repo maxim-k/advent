@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>Калядны каляндар</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main id="view">
+  <div id="scene">
+    <img src="off.jpg" alt="Дом на Ванеева, 24, зимней ночью">
+    <img id="full" src="on.jpg" alt="">
+    <div id="wins"></div>
+  </div>
+</main>
+<canvas id="snow"></canvas>
+<h1 id="title" class="pix" lang="be"></h1>
+<p id="countdown" class="pix"></p>
+
+<dialog id="day">
+  <form method="dialog"><button aria-label="Закрыть">×</button></form>
+  <h2 id="d-title"></h2>
+  <img id="d-photo" alt="Фото дня">
+  <section id="d-song">
+    <h3>Песня дня</h3>
+    <iframe id="d-video" title="Песня дня" allow="encrypted-media; picture-in-picture; fullscreen" allowfullscreen></iframe>
+    <a id="d-songlink" target="_blank" rel="noopener">Открыть на YouTube</a>
+  </section>
+  <section id="d-gift">
+    <h3>Подарок</h3>
+    <p id="d-text"></p>
+    <img id="d-giftimg" alt="Подарок">
+    <a id="d-link" target="_blank" rel="noopener">Открыть подарок</a>
+  </section>
+</dialog>
+
+<script src="app.js"></script>
+</body>
+</html>
